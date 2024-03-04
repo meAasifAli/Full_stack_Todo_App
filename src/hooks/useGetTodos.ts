@@ -1,6 +1,7 @@
 import { collection, onSnapshot } from "firebase/firestore"
 import { useEffect, useState } from "react"
 import { db } from "../firebase"
+import { Todo } from "../vite-env";
 
 const useGetTodos = () => {
     const [todos, setTodos] = useState<Todo[]>([]);
